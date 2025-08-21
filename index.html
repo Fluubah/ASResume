@@ -1,1 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aaron Sabisch</title>
+    <style>
+        :root {
+            --accent: #64748b;
+            --accent-2: #94a3b8;
+            --ink: #0f172a;
+            --muted: #475569;
+            --border: #d9dee7;
+            --bg: #fcfcfd;
+            --chip: #f3f5f7;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            line-height: 1.55;
+        }
+        header {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 28px 20px 18px;
+            border-bottom: 1px solid var(--border);
+            background: #fff;
+        }
 
+        .topline {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 10px 18px;
+            justify-content: space-between;
+        }
+        h1 { font-size: 1.9rem; margin: 0; letter-spacing: 0.1px; }
+        .contacts { font-size: 0.95rem; color: var(--muted); }
+        .contacts a { color: inherit; text-decoration: none; border-bottom: 1px dashed var(--accent-2); }
+        .contacts a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+
+        main { max-width: 900px; margin: 24px auto 56px; padding: 0 20px; }
+
+        section { margin: 22px 0; }
+        h2 {
+            margin: 0 0 8px 0;
+            font-size: 1.05rem;
+            color: var(--muted);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+        p { margin: 6px 0 0 0; }
+
+        .pillset { display: flex; flex-wrap: wrap; gap: 8px; }
+        .pill {
+            background: var(--chip);
+            border: 1px solid var(--border);
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-size: 0.92rem;
+        }
+        ul { margin: 6px 0 0 1.1rem; padding: 0; }
+        li { margin: 4px 0; }
+        .project { margin: 12px 0 16px; }
+        .project h3 { margin: 0; font-size: 1.02rem; }
+        .project a { color: var(--accent); text-decoration: none; }
+        .project a:hover { text-decoration: underline; }
+        .meta { color: var(--muted); font-size: 0.95rem; }
+
+        footer {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 22px 20px 40px;
+            color: var(--muted);
+            border-top: 1px solid var(--border);
+            font-size: 0.93rem;
+            background: #fff;
+        }
+        @media print {
+            body { background: #fff; }
+            header, footer { border-color: #000; }
+            .contacts a { border-bottom: none; }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="topline">
+        <h1>Aaron Sabisch</h1>
+        <div class="contacts">
+            Austin, TX · <a href="mailto:aaronsabisch0@gmail.com">aaronsabisch0@gmail.com</a> · <a href="tel:+17372313668">737‑231‑3668</a> · <a href="https://github.com/Fluubah" target="_blank" rel="noopener">github.com/Fluubah</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section aria-label="Summary">
+        <h2>Summary</h2>
+        <p>Austin Texas High School dev, building small games and tools in Java, Python, Javascript+React, and other engines. </p>
+    </section>
+    <section aria-label="Skills">
+        <h2>Skills</h2>
+        <div class="pillset">
+            <span class="pill">Java (proficient)</span>
+            <span class="pill">Python (proficient)</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">React</span>
+        </div>
+    </section>
+    <section aria-label="Projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3><a href="https://github.com/Fluubah/Oscilloscope" target="_blank" rel="noopener">3D Vectorscope / Oscilloscope (Java)</a></h3>
+            <ul>
+                <li>Renders Wav or MP3 files through a simulated oscilloscope in real time, or pre-rendered</li>
+                <li>Made as a way for me to better understand low level audio input-output</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>
+                <a href="https://github.com/Fluubah/Ship" target="_blank" rel="noopener">Ship</a>
+                — <a href="https://fluubah.github.io/Ship/" target="_blank" rel="noopener">Live demo</a>
+            </h3>
+        </div>
+
+        <div class="project">
+            <h3><a href="https://github.com/Fluubah/SpellingGame" target="_blank" rel="noopener">Spelling Game</a></h3>
+        </div>
+
+        <div class="project">
+            <h3><a href="https://github.com/Fluubah/MazeGame" target="_blank" rel="noopener">Maze Game</a></h3>
+        </div>
+
+        <p class="meta">I have more on github, and some unpublished: <a href="https://github.com/Fluubah" target="_blank" rel="noopener">github.com/Fluubah</a></p>
+    </section>
+
+    <section aria-label="Certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Python Certification</li>
+            <li>Entrepreneurship Certification</li>
+            <li>Financial Literacy Certification</li>
+        </ul>
+    </section>
+
+    <section aria-label="Experience">
+        <h2>Experience</h2>
+        <h3>Drink Expo/Food Runner — Moviehouse & Eatery, Austin, TX</h3>
+        <ul>
+            <li>Main person designated as Drink Expo, ensuring high volume of drink orders is satisfied with consistent quality.</li>
+            <li>Stayed calm under prolonged stress and worked well under pressure.</li>
+        </ul>
+
+        <h3>Food Service — ThunderCloud Subs, Austin, TX</h3>
+        <ul>
+            <li>I prepare food orders while maintaining a clean and safe food environment.</li>
+            <li>Additionally, I provide direct counter service ensuring a great customer experience</li>
+        </ul>
+
+        <h3>Community Volunteering</h3>
+        <ul>
+            <li>Neighborhood events: Boo Bash, Easter Event, End‑of‑Summer Party</li>
+            <li>Elementary school carnival and park improvement projects.</li>
+        </ul>
+    </section>
+
+    <section aria-label="Education">
+        <h2>Education</h2>
+        <ul>
+            <li>Austin High School — Austin, TX</li>
+            <li>Clint Small Middle School — Austin, TX</li>
+            <li>Oak Hill Elementary — Austin, TX</li>
+            <li>Faith United Preschool — Austin, TX</li>
+
+            <li>Relevant Classes/Credits: Advanced Physics, Score of 5 on AP PreCal, currently enrolled in AP calc AB and AP Physics C. Score of 4 on AP Computer Science A - Math, as well as on Computer Science Principles</li>
+        </ul>
+    </section>
+
+    <section aria-label="Extracurriculars">
+        <h2>Extracurriculars</h2>
+        <ul>
+            <li>Computer Science — 6+ years</li>
+            <li>Orchestra — 6+ years</li>
+            <li>Spanish — 11 years</li>
+            <li>Boy Scouts (former) — 8 years</li>
+            <li>Swim — 11 years</li>
+        </ul>
+    </section>
+</main>
+</body>
+</html>
